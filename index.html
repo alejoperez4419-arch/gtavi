@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3a1b7">
+  <meta name="description"
+    content="GTA VI Vice City Generator — unofficial visual fan demo for PC, Mobile, Xbox and PlayStation 5.">
+  <title>Vice City Generator — GTA VI</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background-glow background-glow-one" aria-hidden="true"></div>
+  <div class="background-glow background-glow-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Vice City Generator home">
+      <img class="logomenu" src="logo.png" alt="">
+      <span class="brand-name">VICE CITY <b>GENERATOR</b></span>
+    </a>
+    <button class="install-button" id="installButton" type="button" aria-label="Install app">
+      <span class="install-icon" aria-hidden="true">↓</span><span>Install app</span>
+    </button>
+  </header>
+
+  <main id="top" class="app-shell">
+    <div class="titulo">
+      <img src="titulo.png" alt="GTA VI" width="1500" height="500">
+    </div>
+
+    <section class="panel form-panel" id="formSection" aria-labelledby="formTitle">
+      <div class="panel-heading">
+        <div>
+          <p class="section-kicker">PLAYER INFORMATION</p>
+          <h1 id="formTitle">Let’s get you <em>started.</em></h1>
+        </div>
+        <span class="heading-number">01 / 03</span>
+      </div>
+
+      <form id="generatorForm" novalidate>
+        <label class="field-label" for="playerId">PLAYER ID <span class="required">*</span></label>
+        <div class="input-wrap">
+          <span class="input-prefix" aria-hidden="true">#</span>
+          <input id="playerId" name="playerId" type="text" placeholder="Enter your player ID" maxlength="32"
+            autocomplete="off" autocapitalize="off" spellcheck="false" required>
+          <span class="input-check" aria-hidden="true">✦</span>
+        </div>
+
+        <div class="platform-heading">
+          <span class="field-label">SELECT YOUR PLATFORM <span class="required">*</span></span>
+          <span class="choose-one">CHOOSE ONE</span>
+        </div>
+
+        <div class="platform-grid" role="group" aria-label="Select your platform">
+          <button class="platform-option" type="button" data-platform="PC" aria-pressed="false">
+            <span class="platform-radio" aria-hidden="true"></span>
+            <span class="platform-icon platform-svg-icon pc-icon" aria-hidden="true">
+              <!-- Iconify: monitor -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" focusable="false">
+                <path
+                  d="M58.25 2H5.75C3.875 2 2 3.875 2 5.75v42.188c0 1.875 1.875 3.75 3.75 3.75H24.5v3.75c0 2.604-3.378 3.75-7.5 3.75V62h30v-2.813c-4.123 0-7.5-1.146-7.5-3.75v-3.75h18.75c1.875 0 3.75-1.875 3.75-3.75V5.75C62 3.875 60.125 2 58.25 2M60 47.938c0 .769-.982 1.75-1.75 1.75H5.75c-.769 0-1.75-.981-1.75-1.75v-3.75h56z"
+                  fill="currentColor" />
+                <circle cx="32" cy="47.938" r=".938" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="platform-label">PC</span>
+          </button>
+          <button class="platform-option" type="button" data-platform="Mobile" aria-pressed="false">
+            <span class="platform-radio" aria-hidden="true"></span>
+            <span class="platform-icon platform-svg-icon phone-icon" aria-hidden="true">
+              <!-- Iconify: Android -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" focusable="false">
+                <path
+                  d="M270.1 741.7c0 23.4 19.1 42.5 42.6 42.5h48.7v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h85v120.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V784.1h48.7c23.5 0 42.6-19.1 42.6-42.5V346.4h-486zm357.1-600.1l44.9-65c2.6-3.8 2-8.9-1.5-11.4c-3.5-2.4-8.5-1.2-11.1 2.6l-46.6 67.6c-30.7-12.1-64.9-18.8-100.8-18.8s-70.1 6.7-100.8 18.8l-46.6-67.5c-2.6-3.8-7.6-5.1-11.1-2.6c-3.5 2.4-4.1 7.4-1.5 11.4l44.9 65c-71.4 33.2-121.4 96.1-127.8 169.6h486c-6.6-73.6-56.7-136.5-128-169.7M409.5 244.1a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m208.4 0a26.9 26.9 0 1 1 26.9-26.9a26.97 26.97 0 0 1-26.9 26.9m223.4 100.7c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c.1-30.6-24.3-55.3-54.6-55.3m-658.6 0c-30.2 0-54.6 24.8-54.6 55.4v216.4c0 30.5 24.5 55.4 54.6 55.4c30.2 0 54.6-24.8 54.6-55.4V400.1c0-30.6-24.5-55.3-54.6-55.3"
+                  fill="currentColor" />
+              </svg>
+            </span>
+            <span class="platform-label">MOBILE</span>
+          </button>
+          <button class="platform-option" type="button" data-platform="Xbox" aria-pressed="false">
+            <span class="platform-radio" aria-hidden="true"></span>
+            <span class="platform-icon platform-svg-icon xbox-icon" aria-hidden="true">
+              <!-- Iconify: Xbox -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" focusable="false">
+                <path
+                  d="M7.202 15.967a8 8 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306c0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531c1.43 1.753 2.088 3.189 1.754 3.829c-.254.486-1.83 1.437-2.987 1.802c-.954.301-2.207.429-3.239.33m-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95c.218-1.377 1.002-2.97 1.945-3.95c.401-.417.437-.427.926-.263c.595.2 1.23.638 2.213 1.528l.574.519l-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063c.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687c-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575l.494-.454c.646-.593 1.095-.948 1.58-1.25c.381-.237.927-.448 1.161-.448c.145 0 .654.528 1.065 1.104a8.4 8.4 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.5 9.5 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404c-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4 4 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.8 7.8 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005c.85.18 1.853.552 2.418.9l.168.103l-.385-.02c-.766-.038-1.88.27-3.078.853c-.361.176-.676.316-.699.312a12 12 0 0 1-.654-.319Z"
+                  fill="currentColor" />
+              </svg>
+            </span>
+            <span class="platform-label">XBOX</span>
+          </button>
+          <button class="platform-option" type="button" data-platform="PS5" aria-pressed="false">
+            <span class="platform-radio" aria-hidden="true"></span>
+            <span class="platform-icon platform-svg-icon ps-icon" aria-hidden="true">
+              <!-- Iconify: PlayStation -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" focusable="false">
+                <path
+                  d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538c-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43c1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988c-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985c2.207.757 2.955 1.7 2.955 3.825c0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538c.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z"
+                  fill="currentColor" />
+              </svg>
+            </span>
+            <span class="platform-label">PLAYSTATION 5</span>
+          </button>
+        </div>
+
+        <p class="error-message" id="errorMessage" role="alert" aria-live="polite"></p>
+        <button class="next-button" type="submit">
+          <span>NEXT</span><span class="arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+      <div class="safe-note"><span aria-hidden="true">✧</span> No password required. Your ID stays in this browser.
+      </div>
+    </section>
+
+    <section class="panel loading-panel" id="loadingSection" aria-live="polite" aria-label="Generating your card"
+      hidden>
+      <div class="loader-orbit">
+        <div class="loader-core"><img src="giratorio.png" alt=""></div>
+      </div>
+      <p class="section-kicker">PLEASE WAIT</p>
+      <h2>Preparing your <em>edition...</em></h2>
+      <p class="loading-copy">Getting your Vice City card ready</p>
+      <div class="loading-track"><span></span></div>
+      <div class="loading-meta"><span>GENERATING YOUR CARD</span><span>01.5 SEC</span></div>
+    </section>
+
+    <section class="panel result-panel" id="resultSection" aria-labelledby="resultTitle" hidden>
+      <div class="result-topline"><span class="success-mark" aria-hidden="true">✓</span><span>GENERATION
+          COMPLETE</span><span class="result-code">GTA / VI</span></div>
+      <p class="section-kicker">YOUR EXCLUSIVE DROP</p>
+      <h2 id="resultTitle">You have received <em>GTA VI.</em></h2>
+      <p class="result-subtitle">Your Ultimate Edition card is ready.</p>
+
+      <figure class="reward-card">
+        <img src="tarjeta.png" alt="GTA VI Ultimate Edition card" width="926" height="538">
+        <figcaption><span>ULTIMATE EDITION</span><span>VICE CITY COLLECTION</span></figcaption>
+      </figure>
+
+      <div class="result-details">
+        <div><small>PLAYER ID</small><strong id="resultPlayerId">—</strong></div>
+        <div><small>PLATFORM</small><strong id="resultPlatform">—</strong></div>
+        <div><small>STATUS</small><strong class="status-ready">CARD GENERATED</strong></div>
+      </div>
+      <button class="next-button restart-button" id="restartButton" type="button"><span>GENERATE AGAIN</span><span
+          class="arrow" aria-hidden="true">↻</span></button>
+    </section>
+
+  </main>
+</body>
+
+</html>
